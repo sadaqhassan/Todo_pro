@@ -11,9 +11,9 @@ dotenv.config();
 
 appConfig(app)
 
-const port =process.env.port;
+const port = process.env.PORT;
 
-app.use('/',userRoute);
+app.use('/api/user',userRoute);
 
 connDb();
 
