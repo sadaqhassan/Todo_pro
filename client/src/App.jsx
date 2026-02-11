@@ -5,10 +5,9 @@ import Auth from './Pages/Auth'
 const App = () => {
   const [user,setUser] = useState(null)
   return (
-    <div>
+    <div className='bg-green-500'>
       <Routes>
         <Route path='/' element={!user ? <Auth/> : null}>
-
         </Route>
       </Routes>
     </div>

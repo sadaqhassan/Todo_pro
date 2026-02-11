@@ -6,7 +6,7 @@ const Auth = () => {
     }
     const [state,setState] = useState("login")
   return (
-    <div className='bg-black flex flex-col inset-0 justify-center items-center fixed'>
+    <div className='bg-black/70 flex flex-col inset-0 justify-center items-center fixed'>
         <form  onSubmit={handleSubmit} className='p-10 bg-white shadow-2xl rounded-md flex flex-col space-y-4'>
             {state  === "register" && <input type="text" name='name' placeholder='name' className='bg-gray-100 px-2 py-1 rounded '/>}
             <input type="email" name='email' placeholder='email' className='bg-gray-100 px-2 py-1 rounded '/>
